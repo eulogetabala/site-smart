@@ -792,3 +792,54 @@ body {
     margin-bottom: 50px;
   }
 }
+
+#tabs{
+  background-color: #000000;
+ height: 70px;
+}
+
+.nav-link{
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.nav-link:hover{
+  color: rgb(255, 255, 255);
+  border: none;
+background-color: #000000;
+}
+
+
+.img-rounded{
+  border-radius: 20px 90px 10px;
+}
+
+#parat{
+  margin-top: 35px;
+  color: rgb(60, 61, 61);
+}
+@media (max-width: 767px) {
+  .img-rounded{
+    width: 172px;
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+  #parat{
+    font-size: 12px;
+  }
+  #tabs{
+    background-color: #000000;
+   height: 70px;
+  }
+}
+
+.th2{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 800;
+  font-family: "poppins";
+}

@@ -1628,6 +1628,21 @@ responsive
   .gtco-banner-area .col-md-6 .card .card-img-top {
     margin-top: 100px;
   }
+  .bg-h{
+   background-size: contain;
+   height: 40px;
+  }
+  .th2{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  #tabs{
+    display: inline-block;
+    margin-left: 80px;
+    background-color: #000000;
+  }
+
 }
 .gtco-banner-area a, .gtco-feature a, .gtco-features a, .gtco-news .owl-carousel .card a, #gtco-footer .submit-button {
   background-image: -moz-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
