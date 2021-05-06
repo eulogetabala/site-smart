@@ -1144,7 +1144,11 @@ Portfolio
 
 .our-portfolio .hidden-content p {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
+  /* text-align: justify; */
+  line-height: 1.5em;
+  margin-top:-6px;
+
 }
 
 
