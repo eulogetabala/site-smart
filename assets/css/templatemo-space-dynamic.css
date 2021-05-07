@@ -105,7 +105,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #fcfcfc;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -142,7 +142,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: #fcfcfc;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1669,6 +1669,7 @@ responsive
   margin-left: 15px;
 }
 
-.slid{
-  margin-top: 100px;
+#about1{
+  background: tomato; 
+  height: 450px;
 }
