@@ -238,6 +238,10 @@ header
 --------------------------------------------- 
 */
 
+.golo{
+  width: 80px;
+}
+
 .background-header {
   background-color: #fff!important;
   height: 80px!important;
