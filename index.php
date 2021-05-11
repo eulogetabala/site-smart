@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+
+if(!empty($_POST))
+{
+ 
+  $email = $_POST['email'];
+  
+}
+
+// connection a la base de donées
+$bdd = new PDO('mysql:host=localhost;dbname=smart;charset=utf8', "root", "");
+
+$req= $bdd->prepare('INSERT INTO newsletter SET email=?');
+$req->execute([$email]);
+
+
+?>
 
   <head>
 
@@ -568,11 +585,10 @@ img.zoom {
           <div>
               <div class="card text-center"><img class="card-img-top" src="assets/images/news3.jpg" alt="">
                   <div class="card-body text-left pr-0 pl-0">
-                      <h5>Morbi faucibus odio sollicitudin
-                          risus scelerisque dignissim. </h5>
-                      <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat augue,
-                          et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus risus
-                          . . . </p>
+                      <h5> POURQUOI EST-CE IMPORTANT DE LIRE ? </h5>
+                      <p>  Une étude a été faite pour savoir combien de personnes sont fans de l ecture, sur 100 %, on
+a noté 20 % de oui et 80 % de non. La l ecture n’est plus d’actualité, l es gens ne l isent plus,
+lire devient difficile à cause du brouhaha du quotidien.</p>
                       <a href="detail_news3.html">Lire l'article <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
               </div>
           </div>
@@ -665,15 +681,16 @@ img.zoom {
       </div>
     </div>
   </div> -->
+
   <section class="home-newsletter">
     <div class="container">
     <div class="row">
     <div class="col-sm-12">
       <div class="single">
         <h2>Abonnez-vous a notre newsletter</h2>
-        <form action="">
+        <form action="" method="post">
       <div class="input-group">
-             <input type="email" class="form-control" placeholder="Entrer votre email">
+             <input type="email" name="email" class="form-control" placeholder="Entrer votre email">
              <span class="input-group-btn">
              <button class="btn btn-theme" type="submit">S'abonner</button>
              </span>
@@ -719,6 +736,25 @@ img.zoom {
     </style>
 
 
+
+<?php
+
+if(!empty($_POST))
+{
+  $nom = $_POST['nom'];
+  $prenom = $_POST['prenom'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+}
+
+// connection a la base de donées
+$bdd = new PDO('mysql:host=localhost;dbname=smart;charset=utf8', "root", "");
+
+$req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
+$req->execute([$nom,$prenom,$email,$message]);
+
+
+?>
   <div id="contact" class="contact-us section">
     <div class="container">
       <div class="row">
