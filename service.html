@@ -385,60 +385,142 @@ $(".fancybox").fancybox({
 </div>
 </div>
 
-<div id="contact" class="contact-us section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-        <div class="section-heading">
-          <h2>Let's stay in touch</h2>
-          <div class="phone-info">
-            <h4> <span><i class="fa fa-home"></i> <a href="#" style="font-size: 25px;">93 Avenue Gallieni, Mpila</a></span></h4>
-          </div>
-          <div class="phone-info">
-            <h4> <span><i class="fa fa-phone"></i> <a href="#" style="font-size: 25px;">+242 06 710 15 15</a></span></h4>
-          </div>
-          <div class="phone-info">
-            <h4><span><i class="fa fa-envelope"></i> <a href="#" style="font-size: 25px;">contact.smartvision.cg</a></span></h4>
+ <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Let's stay in touch</h2>
+            <div class="phone-info">
+              <h4> <span><i class="fa fa-home"></i> <a href="#" style="font-size: 25px;">93 Avenue Gallieni, Mpila</a></span></h4>
+            </div>
+            <div class="phone-info">
+              <h4> <span><i class="fa fa-phone"></i> <a href="#" style="font-size: 25px;">+242 06 710 15 15</a></span></h4>
+            </div>
+            <div class="phone-info">
+              <h4><span><i class="fa fa-envelope"></i> <a href="#" style="font-size: 25px;">contact.smartvision.cg</a></span></h4>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-        <form id="contact" action="" method="post">
-          <div class="row">
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="name" name="name" id="name" placeholder="Nom()" autocomplete="on" required>
-              </fieldset>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="nom" id="name" placeholder="Nom()" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="prenom" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" name="submit" id="form-submit" class="main-button ">Envoyer</button>
+                </fieldset>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-              </fieldset>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
             </div>
-            <div class="col-lg-12">
-              <fieldset>
-                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-              </fieldset>
-            </div>
-            <div class="col-lg-12">
-              <fieldset>
-                <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-              </fieldset>
-            </div>
-            <div class="col-lg-12">
-              <fieldset>
-                <button type="submit" id="form-submit" class="main-button ">Envoyer</button>
-              </fieldset>
-            </div>
-          </div>
-          <div class="contact-dec">
-            <img src="assets/images/contact-decoration.png" alt="">
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <style>
+    /* footer social icons */
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+  }
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  .social-network a.icoRss:hover {
+    background-color: #F56505;
+  }
+  .social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+  }
+  .social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+  }
+  .social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+  }
+  .social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+  }
+  .social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+  }
+  .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+  .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color:#fff;
+  }
+  a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+  }
+  
+  .social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+  }
+  .social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+   
+  </style>
 
 <footer>
   <div class="container">
