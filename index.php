@@ -3,18 +3,18 @@
 
 <?php
 
-if(!empty($_POST))
-{
+// if(!empty($_POST))
+// {
  
-  $email = $_POST['email'];
+//   $email = $_POST['email'];
   
-}
+// }
 
 
-$bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
+// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
 
-$req= $bdd->prepare('INSERT INTO newsletter SET email=?');
-$req->execute([$email]);
+// $req= $bdd->prepare('INSERT INTO newsletter SET email=?');
+// $req->execute([$email]);
 
 
 ?>
@@ -800,18 +800,18 @@ a:link {
 
   <?php
 
-if(!empty($_POST))
-{
-  $nom = $_POST['nom'];
-  $prenom = $_POST['prenom'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-}
+// if(!empty($_POST))
+// {
+//   $nom = $_POST['nom'];
+//   $prenom = $_POST['prenom'];
+//   $email = $_POST['email'];
+//   $message = $_POST['message'];
+// }
 
-$bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
+// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
 
-$req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
-$req->execute([$nom,$prenom,$email,$message]);
+// $req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
+// $req->execute([$nom,$prenom,$email,$message]);
 
 
 ?>  
