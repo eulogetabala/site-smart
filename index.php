@@ -3,18 +3,18 @@
 
 <?php
 
-// if(!empty($_POST))
-// {
+if(!empty($_POST))
+{
  
-//   $email = $_POST['email'];
+  $email = $_POST['email'];
   
-// }
+}
 
 
-// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
+$bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
 
-// $req= $bdd->prepare('INSERT INTO newsletter SET email=?');
-// $req->execute([$email]);
+$req= $bdd->prepare('INSERT INTO newsletter SET email=?');
+$req->execute([$email]);
 
 
 ?>
@@ -255,11 +255,11 @@ if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,fa
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h2> Notre expertise</h2>
+                <h2> Nos domaines d'expertise</h2>
                 <img src="assets/images/1.jpg" alt="" style="border-radius: 30px 30px 30px 30px;">
                 </div>
             <div class="col-lg-8">
-                <svg id="bg-services"
+                <!-- <svg id="bg-services"
                      width="100%"
                      viewBox="0 0 1000 800">
                     <defs>
@@ -270,7 +270,7 @@ if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,fa
                     </defs>
                     <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
                           d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z"/>
-                </svg>
+                </svg> -->
                 <div class="row">
                     <div class="col">
                         <div class="card text-center">
@@ -515,7 +515,7 @@ Nous sommes également au cœur des événements culturels et sportifs. </div>
 a:link {
     text-decoration: none
 }
- </style>
+ </style> <br><br>
 
 
    <!-- Page Content -->
@@ -584,75 +584,6 @@ a:link {
 
 </div>
 
-<style>
-  #demo {
-  height:100%;
-  position:relative;
-  overflow:hidden;
-  
-}
-
-
-.green{
-  background-color:#6fb936;
-}
-        .thumb{
-            margin-bottom: 30px;
-        }
-        
-        .page-top{
-            margin-top:85px;
-        }
-
-   
-img.zoom {
-    width: 100%;
-    height: 200px;
-    border-radius:5px;
-    object-fit:cover;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-}
-        
- 
-.transition {
-    -webkit-transform: scale(1.2); 
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-    .modal-header {
-   
-     border-bottom: none;
-}
-    .modal-title {
-        color:#000;
-    }
-    .modal-footer{
-      display:none;  
-    }
-
-</style>
-<script>
-  $(document).ready(function(){
-  $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-    
-    $(".zoom").hover(function(){
-		
-		$(this).addClass('transition');
-	}, function(){
-        
-		$(this).removeClass('transition');
-	});
-});
-    
-</script>
-
 
 <!-- <div class="container-fluid gtco-logo-area" >
   <div class="container">
@@ -676,11 +607,7 @@ img.zoom {
                 
               </div>
           </div>
-          <div>
-              <div class="card text-center"><img class="card-img-top1" src="assets/images/logos partenaires/Ens._Logo_Partenaires-03.png">
-                 
-              </div>
-          </div>
+         
           <div>
               <div class="card text-center"><img class="card-img-top1" src="assets/images/logos partenaires/Ens._Logo_Partenaires-04.png" alt="">
                  
@@ -709,7 +636,7 @@ img.zoom {
       <h2>Derniers articles</h2>
       <div class="owl-carousel owl-carousel2 owl-theme">
           <div>
-              <div class="card text-center"><img class="card-img-top" src="assets/images/news1.jpg" alt="">
+              <div class="card text-center"><img class="card-img-top" src="assets/images/promouvoir votre image.jpg" alt="">
                   <div class="card-body text-left pr-0 pl-0">
                       <h5>2 RAISONS ULTIMES POUR FAIRE APPEL A UNE AGENCE COMMUNICATION  </h5>
                       <p class="card-text">La communication est partout, quel que soit le domaine il est primordial de communiquer, 
@@ -719,7 +646,7 @@ img.zoom {
               </div>
           </div>
           <div>
-              <div class="card text-center"><img class="card-img-top" src="assets/images/news2.jpg" alt="">
+              <div class="card text-center"><img class="card-img-top" src="assets/images/diffusion.jpg" alt="">
                   <div class="card-body text-left pr-0 pl-0">
                       <h5> L’IMPORTANCE DE COMMUNIQUER SUR LES RESEAUX SOCIAUX POUR UNE ENTREPRISE </h5>
                       <p class="card-text">Aujourd’hui, nous sommes nombreux dans le monde à utiliser Internet, l’arrivée des réseaux sociaux a bouleversé l’usage de la communication des entreprises </p>
@@ -727,7 +654,7 @@ img.zoom {
               </div>
           </div>
           <div>
-              <div class="card text-center"><img class="card-img-top" src="assets/images/news3.jpg" alt="">
+              <div class="card text-center"><img class="card-img-top" src="assets/images/lire.jpg" alt="">
                   <div class="card-body text-left pr-0 pl-0">
                       <h5> POURQUOI EST-CE IMPORTANT DE LIRE ? </h5>
                       <p>  Une étude a été faite pour savoir combien de personnes sont fans de l ecture, sur 100 %, on
@@ -873,18 +800,18 @@ img.zoom {
 
   <?php
 
-// if(!empty($_POST))
-// {
-//   $nom = $_POST['nom'];
-//   $prenom = $_POST['prenom'];
-//   $email = $_POST['email'];
-//   $message = $_POST['message'];
-// }
+if(!empty($_POST))
+{
+  $nom = $_POST['nom'];
+  $prenom = $_POST['prenom'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+}
 
-// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
+$bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
 
-// $req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
-// $req->execute([$nom,$prenom,$email,$message]);
+$req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
+$req->execute([$nom,$prenom,$email,$message]);
 
 
 ?>  

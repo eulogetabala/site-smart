@@ -32,26 +32,25 @@ https://templatemo.com/tm-562-space-dynamic
 
 <body>
  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+ <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo golo">
-             <img src="assets/images/logo.png" alt="" srcset="">
-            </a>
+              <img src="assets/images/logo.png" alt="" srcset="">
+             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="index.php" class="active">Accueil</a></li>
               <li class="scroll-to-section"><a href="about.html">L'agence</a></li>
-              <li class="scroll-to-section"><a href="service.html">Services</a></li>
-              <!-- <li class="scroll-to-section"><a href="#portfolio"></a></li> -->
-              <li class="scroll-to-section"><a href="blog.html">Actualités</a></li> 
-              <li class="scroll-to-section"><a href="blog.html">Boutique</a></li> 
-              <li class="scroll-to-section"><a href="contact.html">Contact</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Demander un devis</a></div></li> 
+               <li class="scroll-to-section"><a href="#service">Services</a></li> 
+              <li class="scroll-to-section"><a href="">Boutique</a></li>
+              <li class="scroll-to-section"><a href="index6.html">Actualités</a></li> 
+              <li class="scroll-to-section"><a href="#contact">Contact</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="devis.php">Demander un devis</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -62,6 +61,7 @@ https://templatemo.com/tm-562-space-dynamic
       </div>
     </div>
   </header>
+
   
   <!-- ***** Header Area End ***** -->
 
@@ -175,17 +175,112 @@ if(!empty($_POST))
     </div>
   </div>
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-        <p>© Copyright Smart vision. 
+  <style>
+    /* footer social icons */
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+  }
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  .social-network a.icoRss:hover {
+    background-color: #F56505;
+  }
+  .social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+  }
+  .social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+  }
+  .social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+  }
+  .social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+  }
+  .social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+  }
+  .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+  .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color:#fff;
+  }
+  a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+  }
+  
+  .social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+  }
+  .social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+   
+  </style>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+       
+    
+
+          <div class="col-md-12" style="margin-left: 450px; margin-top: -20px;">
+            <ul class="social-network social-circle" >
+               
+                <li><a href="https://www.facebook.com/smartvisioncongo" class="icoFacebook" title="Facebook" style="background-color: #3B5998;"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/smartvisioncg/" class="icoTwitter" title="Twitter" style="background-color: #33ccff;"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/smart_vision_cg/" class="icoInstagram" title="Google +" style="background-color: #BD3518;"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin" style="background-color: #007bb7;"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin" style="background-color: #fc2c11;"><i class="fa fa-youtube"></i></a></li>
+            </ul>				
+          </div>
+       
         
-      
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+    <p>© Copyright Smart vision.</p> 
+  </footer>
 <!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
