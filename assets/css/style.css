@@ -336,6 +336,7 @@ body {
     margin: 0 auto;
     margin-top: 200px;
   }
+  
 }
 .gtco-features h2 {
   margin-top: 200px;
@@ -364,6 +365,7 @@ body {
   .gtco-features .col-lg-8 .row .col:first-child {
     margin-top: 50px;
   }
+  
 }
 @media (max-width: 600px) {
   .gtco-features .col-lg-8 .col {
@@ -421,6 +423,7 @@ body {
   .gtco-numbers-block .row .col-3 {
     padding: 0;
   }
+
 }
 .gtco-numbers-block #custom-map::before {
   position: absolute;
@@ -849,4 +852,8 @@ background-color: #000000;
   margin-top: 20px;
   font-weight: 800;
   font-family: "poppins";
+}
+
+.pq{
+  color: white;
 }

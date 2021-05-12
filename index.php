@@ -3,18 +3,18 @@
 
 <?php
 
-if(!empty($_POST))
-{
+// if(!empty($_POST))
+// {
  
-  $email = $_POST['email'];
+//   $email = $_POST['email'];
   
-}
+// }
 
-// connection a la base de donées
-$bdd = new PDO('mysql:host=localhost;dbname=smart;charset=utf8', "root", "");
 
-$req= $bdd->prepare('INSERT INTO newsletter SET email=?');
-$req->execute([$email]);
+// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
+
+// $req= $bdd->prepare('INSERT INTO newsletter SET email=?');
+// $req->execute([$email]);
 
 
 ?>
@@ -40,6 +40,7 @@ $req->execute([$email]);
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/style.css">  
 
+
     <script>
       window.callbellSettings = {
           token: "e7YrvuGrNbxBRtz8cjiJjmfi"
@@ -50,29 +51,16 @@ $req->execute([$email]);
     token: "bMa6LqqrytVwo8sHeGeMbvyj"
   };
 </script>
-<script>
-  (function(){var w=window;var ic=w.callbell;
-  if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}
-  else{var d=document;var i=function(){i.c(arguments)};
-  i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;
-  var l=function(){var s=d.createElement('script');
-  s.type='text/javascript';
-  s.async=true;
-  s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-</script>
+<!-- Start of Async Callbell Code --> <script> window.callbellSettings = { token: "ktKQZq9KvG4WRcQShzBLmhhz" }; </script>
+ <script> (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}
+ else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;
+ var l=function(){var s=d.createElement('script');s.type='text/javascript';
+ s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';
+ var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};
+if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})() 
+</script> <!-- End of Async Callbell Code --> 
   
-
-
-
-<!--
-    
-TemplateMo 562 Space Dynamic
-
-https://templatemo.com/tm-562-space-dynamic
-
--->
-
-  </head>
+</head>
 
 <body>
 
@@ -104,11 +92,11 @@ https://templatemo.com/tm-562-space-dynamic
             <ul class="nav">
               <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
               <li class="scroll-to-section"><a href="about.html">L'agence</a></li>
-               <li class="scroll-to-section"><a href="service.html">Services</a></li> 
-              <li class="scroll-to-section"><a href="shop/index.html">Boutique</a></li>
+               <li class="scroll-to-section"><a href="#service">Services</a></li> 
+              <li class="scroll-to-section"><a href="">Boutique</a></li>
               <li class="scroll-to-section"><a href="index6.html">Actualités</a></li> 
               <li class="scroll-to-section"><a href="#contact">Contact</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Demander un devis</a></div></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="devis.php">Demander un devis</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -262,59 +250,12 @@ https://templatemo.com/tm-562-space-dynamic
 
 
 
-  <div id="about" class="about-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6 style="font-size: 45px; color: white;font-weight: 800;margin-top: 27px;">Pourquoi nous choisir?</h6>
-        
-            <!-- <img src="assets/images/about-left-image.png" alt="person graphic"> -->
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-          <div class="services">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-01.png" alt="reporting">
-                  </div>
-                  <div class="right-text">
-                    
-                    <p style="text-align: center;" >nous faisons notre travail en respectant toutes les normes  qu’exige notre profession.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-02.png" alt="">
-                  </div>
-                  
-                  <div class="right-text">
-                   
-                    <p >Nous sommes sensibles à vos désirs d’efficacité et de performance.
-                    </p>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
-
+ <br>
   <div class="container-fluid gtco-features" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h2> Nos services</h2>
+                <h2> Notre expertise</h2>
                 <img src="assets/images/1.jpg" alt="" style="border-radius: 30px 30px 30px 30px;">
                 </div>
             <div class="col-lg-8">
@@ -365,13 +306,216 @@ https://templatemo.com/tm-562-space-dynamic
                                 <p class="card-text">-Ameliorer votre visibilité <br> -Assurer la veille <br> optimiser votre image</p>
                             </div>
                         </div>
-                        <a href="service.html">Tous les services <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <!-- <a href="service.html">Tous les services <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+ 
+<section class="accordion_two_section ptb-100" id="service">
+    <div class="container">
+    <h2 style="text-align:center;color:#fff;"> Nos Services</h2>
+        <div class="row">
+            <div class="col-sm-6 accordionTwo">
+                <div class="panel-group" id="accordionTwoLeft">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftone" aria-expanded="false" class="collapsed" style="background-color:#696969;color:#fff;"> Developpement web & mobile </a> </h4>
+                        </div>
+                        <div id="collapseTwoLeftone" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;background-color:#696969;">
+                            <div class="panel-body"style="background-color:#696969;"> Avant de se lancer dans la création de son site internet, il convient de se fixer les bons objectifs : un site internet est un outil de communication, mais il peut s’avérer être un puissant outil marketing et e-commerce.
+                        Nous vous accompagnons de la conception de votre projet jusqu’à la mise en ligne de votre site internet en vous conseillant sur la personnalisation de votre offre et le paramétrage des fonctionnalités.
+                        Nous vous garantissons le cahier des charges, le développement, la livraison et la maintenance de tous les sites internet.
+                        Notre objectif est de vous livrer un site internet sur-mesure, un site qui vous ressemble et surtout un site clé en main.
+                        -	Webdesign
+                        -	Site E-commerce </div>
+                        </div>
+                    </div> <!-- /.panel-default --> <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftTwo" aria-expanded="false"style="background-color:#08bb00;color:#fff;"> Conseil et accompagnement</a> </h4>
+                        </div>
+                        <div id="collapseTwoLeftTwo" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="
+                            background-color:#08bb00;">Le conseil en communication, c’est avant tout définir le bon message, adressé à la bonne personne, au bon moment et sur le bon média.
+                        Cette partie de notre métier consiste à fournir des conseils en matière de communication pour nos clients. Notre équipe de professionnels est à votre disposition pour vous aider à prendre de bonnes décisions.
+                        Notre priorité est de vous proposer des solutions sur-mesure qui répondront à vos besoins, vos attentes et vos envies.</div>
+                        </div>
+                    </div> <!-- /.panel-default --> <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftThree" aria-expanded="false" style="background-color:#ff007a;color:#fff;"> Evènementiel</a> </h4>
+                        </div>
+                        <div id="collapseTwoLeftThree" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="background-color:#ff007a ;">Nous œuvrons dans l'organisation d'événements professionnels pour les entreprises et collectivités, mais aussi d'événements privés et familiaux.
+
+L’Agence prend en charge l'organisation et la gestion de congrès, colloques, séminaires, cérémonies, galas. Elle gère le déroulement de l'événement, l'hébergement, la restauration, l'animation, la logistique et les outils de communication nécessaires pour les participants.
+Nous sommes également au cœur des événements culturels et sportifs. </div>
+                        </div>
+                    </div> <!-- /.panel-default --> <br>
+                </div>
+                <!--end of /.panel-group-->
+            </div> <br>
+            <!--end of /.col-sm-6-->
+            <br>
+            <div class="col-sm-6 accordionTwo">
+                <div class="panel-group" id="accordionTwoRight">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightone" aria-expanded="false" style="background-color:#f60000;color:#fff;"> Production audiovisuelle </a> </h4>
+                        </div>
+                        <div id="collapseTwoRightone" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="background-color:#f60000;"> Nous sommes spécialisée dans l’Audiovisuel offrant ainsi des services complets à forte valeur ajoutée. Partant de la post-production (dérushage, montage, synchronisation, retouche d'image, effets spéciaux, titrage, compression – encodage, duplication) en passant par la production (captation d’images, animation de tournage, produits interactifs, films. Nous proposons une approche spécifique de l’image, du son et du multimédia. ), et pour ajouter nous sommes 
+                      dotée d’un studio photo et d’un plateau de télévision dernière génération. </div>
+                        </div>
+                    </div> <!-- /.panel-default --> <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightTwo" aria-expanded="false" style="background-color:  #fff;color:#438e27;"> Conception graphique </a> </h4>
+                        </div>
+                        <div id="collapseTwoRightTwo" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="background-color:  #438e27;"> Parce qu’une image vaut 1000 mots, nos experts en création mettent un accent tout particulier sur la création graphique. Votre projet se réalisera grâce au design graphique et avec l’aide de nos infographes et/ou illustrateurs qui réaliseront les visuels.
+                        Notre équipe sera à l’écoute de vos désirs sur le choix de vos visuels, tout en respectant votre délai, nous vous livrerons un travail de qualité.
+                        
+                        Nos supports : 
+                        -	Logotype et charte graphique
+                        -	Affiche et flyer 
+                        -	Magazine et plaquette commerciale
+                        -	Dépliant, brochure et catalogue
+                        -	Packaging
+                        -	Panneaux publicitaires
+                        -	Bâche, kakémono et PVL
+                        -	Structure métallique en plexi
+                        -	Carte de visite</div>
+                        </div>
+                    </div> <!-- /.panel-default --> <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightThree" aria-expanded="false" style="background-color:  #f39200;color:white;"> Community management </a> </h4>
+                        </div>
+                        <div id="collapseTwoRightThree" class="panel-collapse collapse in" aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="background-color:  #f39200;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam. </div>
+                        </div>
+                    </div> <!-- /.panel-default -->
+                </div>
+                <!--end of /.panel-group-->
+            </div>
+            <!--end of /.col-sm-6-->
+        </div>
+    </div>
+    <!--end of /.container-->
+</section>
+ <style>
+   .accordion_two_section {
+    background: #000;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.accordionTwo .panel-group {
+    margin-top: 10px;
+}
+
+.accordionTwo .panel {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 10px solid transparent;
+    border-radius: 0;
+    margin: 0
+}
+
+.accordionTwo .panel-default {
+    border: 0
+}
+
+.accordionTwo .panel-default>.panel-heading {
+    background: #4385f5;
+    border-radius: 0px;
+    border-color: #4385f5
+}
+
+.accordion-wrap .panel-heading {
+    padding: 0px;
+    border-radius: 0px
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit
+}
+
+.accordionTwo .panel .panel-heading a.collapsed {
+    color: #999999;
+    background-color: #fff;
+    display: block;
+    padding: 12px 20px
+}
+
+.accordionTwo .panel .panel-heading a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff
+}
+
+.accordion-wrap .panel .panel-heading a {
+    font-size: 14px
+}
+
+.accordionTwo .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+    padding-top: 0;
+    padding: 20px 20px 20px 30px;
+    background: #4385f5;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: #4285f4;
+    background: #fff
+}
+
+.accordionTwo .panel .panel-heading a:after,
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    float: right;
+    width: 21px;
+    display: block;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF
+}
+
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    content: "\2b";
+    color: #000;
+    background-color: #fff;
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: #4285f4;
+    background: #dadada;
+}
+
+a:link {
+    text-decoration: none
+}
+ </style>
 
 
    <!-- Page Content -->
@@ -587,23 +731,13 @@ img.zoom {
                   <div class="card-body text-left pr-0 pl-0">
                       <h5> POURQUOI EST-CE IMPORTANT DE LIRE ? </h5>
                       <p>  Une étude a été faite pour savoir combien de personnes sont fans de l ecture, sur 100 %, on
-a noté 20 % de oui et 80 % de non. La l ecture n’est plus d’actualité, l es gens ne l isent plus,
-lire devient difficile à cause du brouhaha du quotidien.</p>
+                            a noté 20 % de oui et 80 % de non. La l ecture n’est plus d’actualité, l es gens ne l isent plus,
+                            lire devient difficile à cause du brouhaha du quotidien.</p>
                       <a href="detail_news3.html">Lire l'article <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
               </div>
           </div>
          
-          <div>
-              <div class="card text-center"><img class="card-img-top" src="assets/images/news3.jpg" alt="">
-                  <div class="card-body text-left pr-0 pl-0">
-                      <h5>Morbi faucibus odio sollicitudin
-                          risus scelerisque dignissim. </h5>
-                      <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat augue,
-                          et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus risus
-                          . . . </p>
-                      <a href="#">Lire l'article <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
-              </div>
-          </div>
+         
       </div>
   </div>
 </div>
@@ -737,24 +871,23 @@ lire devient difficile à cause du brouhaha du quotidien.</p>
 
 
 
-<?php
+  <?php
 
-if(!empty($_POST))
-{
-  $nom = $_POST['nom'];
-  $prenom = $_POST['prenom'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-}
+// if(!empty($_POST))
+// {
+//   $nom = $_POST['nom'];
+//   $prenom = $_POST['prenom'];
+//   $email = $_POST['email'];
+//   $message = $_POST['message'];
+// }
 
-// connection a la base de donées
-$bdd = new PDO('mysql:host=localhost;dbname=smart;charset=utf8', "root", "");
+// $bdd = new PDO('mysql:host=localhost;dbname=nasacdka_smart;charset=utf8', "nasacdka_smart", "ttuM1oqMV9P.");
 
-$req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
-$req->execute([$nom,$prenom,$email,$message]);
+// $req= $bdd->prepare('INSERT INTO contact SET nom=?,prenom=?,email=?,message=?');
+// $req->execute([$nom,$prenom,$email,$message]);
 
 
-?>
+?>  
   <div id="contact" class="contact-us section">
     <div class="container">
       <div class="row">
@@ -930,6 +1063,6 @@ $req->execute([$nom,$prenom,$email,$message]);
 <!-- owl carousel js-->
 <script src="assets/owl-carousel/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script src="  https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

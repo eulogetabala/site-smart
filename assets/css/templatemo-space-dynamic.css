@@ -1309,6 +1309,8 @@ contact
   background-size: cover;
 }
 
+
+
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
@@ -1488,6 +1490,7 @@ responsive
   }
   .about-us .services {
     text-align: center;
+    
   }
   .about-us .services .item  {
     background: rgb(255,77,30);
@@ -1495,6 +1498,10 @@ responsive
     padding: 30px;
     border-radius: 20px;
     display: inline-block;
+    margin-top: 59px;
+  }
+  p{
+    margin-top: 30px;
   }
   .about-us .services .item .right-text {
     text-align: left;
@@ -1588,6 +1595,10 @@ responsive
   .phone-info h4 span i {
     margin-left: 0px;
   }
+
+  .about-us .services .item {
+    margin-top: 59px;
+  }
 }
 .gtco-banner-area {
   margin-top: 20px;
@@ -1660,6 +1671,7 @@ responsive
   text-transform: uppercase;
   padding-right: 5px;
   text-decoration: none !important;
+  margin-left: 50px;
 }
 .gtco-banner-area a .fa, .gtco-feature a .fa, .gtco-features a .fa, .gtco-news .owl-carousel .card a .fa, #gtco-footer .submit-button .fa {
   background: #fff;
